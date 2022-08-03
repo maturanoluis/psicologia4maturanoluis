@@ -8,19 +8,11 @@
     "build-css": "node-sass --include-path scss scss/estilos.scss ./css/estilos.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-<<<<<<< HEAD
   "keywords": ["Psicologia",
   "Terapia",
   "Ayuda psicologica",
   "Depresion"],
-=======
-  "keywords": [
-    "Psicologia",
-    "Terapia",
-    "Ayuda psicologica",
-    "Depresion"
-  ],
->>>>>>> 4f97386aae6711945d71aa5c8a7766ae0e685a61
+  
   "author": "Luis Maturano",
   "license": "ISC",
   "devDependencies": {
