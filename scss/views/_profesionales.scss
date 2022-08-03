@@ -1,0 +1,22 @@
+.profesionales{
+    grid-area: pro;
+    border: solid 1px rgb(0, 0, 0);
+    border-width: 0.2rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 20rem;
+    height: 5rem;
+    display: flex;
+    margin: 0px auto;
+
+    & tr th{
+        padding: 1rem;
+        text-align: center;
+        width: 8rem;
+        height: 1rem;
+    }
+    
+}
+

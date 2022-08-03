@@ -1,0 +1,67 @@
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+/* --------------------RESET-----------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: $secondary;
+    font-family: $font-principal;
+   }
+ul{
+   list-style-type: none; 
+}
+a{
+    text-decoration: none;
+    font-family: $font-principal;
+    color: $secondary;
+}
+img{
+    width: 100%;
+}
+
+h1{
+    grid-area: titulo;
+    text-align: center;
+    padding: $spacing-small;
+    text-decoration: none;
+    color: $primary;
+}
+
+h2{
+    grid-area: slogan;
+    color: $primary;
+    text-align: center;
+}
+
+h5 {
+    grid-area: slogan;
+    color: $primary;
+    text-align: center;
+    margin-top: 1rem; 
+}
+
+.gridPadre{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "slogan slogan slogan"
+    "contenido contenido contenido"
+    "footer footer footer";
+    justify-content: center;
+    align-items: stretch;
+    
+
+}

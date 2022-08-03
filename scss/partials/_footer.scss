@@ -1,0 +1,23 @@
+.pie{
+    @include flex(row, center, center);
+    grid-area: footer;
+    width: 100%;
+    height: 4rem;
+   
+
+    & ul li{
+        display: inline;
+
+        & a{
+            padding: $spacing-small;
+            font-size: $text-small;
+            font-weight: 400;
+           }
+    
+    }
+    
+    
+
+    
+}
+

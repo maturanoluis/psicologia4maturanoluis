@@ -1,0 +1,10 @@
+.videos{
+    @include flex (row,center,center);
+            
+    & iframe{
+        width: 25rem;
+        height: 15rem;
+    }
+
+    
+}

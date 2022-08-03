@@ -1,0 +1,297 @@
+/* colores */
+/* Espacios*/
+/* Font-family */
+/* Font-size */
+/* FUENTES */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+/* --------------------RESET-----------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("../img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #FFFFFF;
+  font-family: "Josefin Sans", sans-serif; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  color: #FFFFFF; }
+
+img {
+  width: 100%; }
+
+h1 {
+  grid-area: titulo;
+  text-align: center;
+  padding: 2rem;
+  text-decoration: none;
+  color: #000000; }
+
+h2 {
+  grid-area: slogan;
+  color: #000000;
+  text-align: center; }
+
+h5 {
+  grid-area: slogan;
+  color: #000000;
+  text-align: center;
+  margin-top: 1rem; }
+
+.gridPadre {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "titulo titulo titulo" "slogan slogan slogan" "contenido contenido contenido" "footer footer footer";
+  justify-content: center;
+  align-items: stretch; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: left;
+  margin-top: 1rem; }
+
+.pie {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-area: footer;
+  width: 100%;
+  height: 4rem; }
+  .pie ul li {
+    display: inline; }
+    .pie ul li a {
+      padding: 2rem;
+      font-size: 1.4em;
+      font-weight: 400; }
+
+.accordion-button {
+  background-color: #0a0a0a; }
+
+.collapsed {
+  background-color: #0a0a0a; }
+
+.accordion-body {
+  background-color: #7b95a1; }
+
+.dropdown {
+  background-color: #6d5f5f; }
+
+.dropdown-item {
+  background-color: #7b95a1; }
+
+.dropdown-menu-dark {
+  background-color: #87a5b3; }
+
+.contenido {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-area: contenido;
+  display: inline;
+  text-align: center;
+  width: 90%;
+  height: 80%; }
+
+section {
+  padding: 2rem;
+  text-align: center; }
+  section p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center; }
+    section p a {
+      text-align: center;
+      border: solid 1px black;
+      border-width: 0.2rem;
+      background-color: #FFFFFF;
+      color: #000000;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.5rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      transform: rotate(10deg);
+      height: 4rem;
+      width: 10rem;
+      transition: font-size 1s,height 1s, width 1s; }
+    section p a:hover {
+      text-align: center;
+      border: solid 1px black;
+      border-width: 0.2rem;
+      background-color: #FFFFFF;
+      color: #000000;
+      font-size: 2rem;
+      height: 5rem;
+      width: 14rem;
+      transition: font-size 1s,height 1s, width 1s; }
+
+.logo img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  margin: auto; }
+
+.videos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .videos iframe {
+    width: 25rem;
+    height: 15rem; }
+
+.informacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black;
+  border-width: 0.1rem;
+  color: black;
+  text-decoration: none;
+  width: 50%;
+  margin: 0px auto;
+  padding: 2rem; }
+  .informacion p {
+    text-align: center;
+    font-size: 1rem; }
+
+.formulario {
+  text-align: center;
+  margin: 1rem; }
+
+.profesionales {
+  grid-area: pro;
+  border: solid 1px black;
+  border-width: 0.2rem;
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 20rem;
+  height: 5rem;
+  display: flex;
+  margin: 0px auto; }
+  .profesionales tr th {
+    padding: 1rem;
+    text-align: center;
+    width: 8rem;
+    height: 1rem; }
+
+.redes {
+  position: fixed;
+  right: 0%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  .redes a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: #FFFFFF;
+    font-size: 20px; }
+  .redes a:hover {
+    background-color: #000000; }
+
+.facebook {
+  background: #3B5998;
+  color: white; }
+
+.twitter {
+  background: #55ACEE;
+  color: white; }
+
+.youtube {
+  background: #bb0000;
+  color: white; }
+
+/*--------------MEDIA QUERIES---------------*/
+@media only screen and (max-width: 768px) {
+  /*--------------TERAPIAS---------------*/
+  .videos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .videos iframe {
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 10rem; }
+  /*--------------FOOTER---------------*/
+  .pie ul li a {
+    font-size: 1.3rem;
+    padding: 0.5rem; } }
+
+@media only screen and (max-width: 480px) {
+  .gridPadre {
+    display: grid;
+    grid-template-areas: "titulo titulo" "slogan slogan" "contenido contenido" "footer footer";
+    grid-template-rows: 150px 300px auto auto 50px;
+    grid-template-columns: 50% 50%; }
+  .gridPadrepro {
+    display: grid;
+    grid-template-areas: "titulo titulo" "slogan slogan" "pro    pro" "footer footer";
+    grid-template-rows: 150px 300px auto auto;
+    grid-template-columns: 50% 50%; }
+  .profesionales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 15rem; }
+  .profesionales tr th {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .h2 {
+    font-size: 1.5rem; }
+  .section p a {
+    font-size: 2rem; }
+  /*--------------TERAPIAS---------------*/
+  .videos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .videos iframe {
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 7rem; }
+  /*--------------FOOTER---------------*/
+  .pie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .pie ul li a {
+    font-size: 1.5rem;
+    padding: 0.5rem; } }

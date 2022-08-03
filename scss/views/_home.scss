@@ -1,0 +1,54 @@
+.contenido{
+    @include flex (row,center,center);
+    grid-area: contenido;
+    display: inline;
+    text-align: center;
+    width: 90%;
+    height: 80%;
+  
+}
+section {
+    padding: 2rem;
+    text-align: center;
+    
+    & p {
+        @include flex (row,center,center);
+        padding: $spacing-small;
+        text-align: center;
+      
+        & a{
+        text-align: center;
+        border: solid 1px black;
+        border-width: 0.2rem;
+        background-color: $secondary;
+        color: $primary;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        transform: rotate(10deg);
+        height: 4rem;
+        width: 10rem;
+        transition: font-size 1s,height 1s, width 1s; }
+      
+        & a:hover {
+        text-align: center;
+        border: solid 1px black;
+        border-width: 0.2rem;
+        background-color: $secondary;
+        color: $primary;
+        font-size: 2rem;
+        height: 5rem;
+        width: 14rem; 
+        transition: font-size 1s,height 1s, width 1s; }
+        }
+    }
+
+    .logo img{
+        @include flex (column, center, center);
+        width:5rem;
+        height:5rem;
+        margin: auto;
+              
+    }
