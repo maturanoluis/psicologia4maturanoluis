@@ -54,7 +54,7 @@ h5 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "titulo titulo titulo" "slogan slogan slogan" "contenido contenido contenido" "footer footer footer";
+  grid-template-areas: "titulo titulo titulo" "slogan slogan slogan" "contenido contenido contenido" "footer footer footer";
   justify-content: center;
   align-items: stretch; }
 
@@ -245,8 +245,8 @@ section {
     height: 10rem; }
   /*--------------FOOTER---------------*/
   .pie ul li a {
-    font-size: 1.3rem;
-    padding: 0.5rem; } }
+    font-size: 1.1rem;
+    padding: 0.1rem; } }
 
 @media only screen and (max-width: 480px) {
   .gridPadre {
@@ -293,5 +293,5 @@ section {
     justify-content: center;
     align-items: center; }
   .pie ul li a {
-    font-size: 1.5rem;
-    padding: 0.5rem; } }
+    font-size: 1.1rem;
+    padding: 0.1rem; } }
