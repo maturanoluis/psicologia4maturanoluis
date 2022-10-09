@@ -1,5 +1,15 @@
 .formulario{
-    background-color: white;
+    @include flex(column, center, center);
     text-align: center;
+    font-size: $text-xsmall;
+    width: 20rem;
+    height: 20rem;
+    background-color: rgb(255, 255, 255);    
     margin: $spacing-xsmall;
+}
+
+.form-row{
+    background-color: rgb(255, 255, 255);
+    margin: $spacing-xsmall;
+    width: 50%;
 }

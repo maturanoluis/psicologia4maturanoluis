@@ -27,7 +27,7 @@
     <div class="gridpadre">
    <!------HEADER------>
 
-   <header class="container-fluid ">
+   <header class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">Psicologia</a>
@@ -41,7 +41,6 @@
                   Menu  
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                  <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
                   <li><a class="dropdown-item" href="./nosotros.html">Nosotros</a></li>
                   <li><a class="dropdown-item" href="./terapias.html">Terapias</a></li>
                   <li><a class="dropdown-item" href="./profesionales.html">Profesionales</a></li>
@@ -63,45 +62,33 @@
 <!------TITULO------>
     
 <main>
-    <div class="contenido">
+    <div>
     <h1>Psicologia</h1>
     
 
 
 <!------FORMULARIO------>
-            <section>
-                <h2>Datos de contacto</h2>
-                <form action="" class="formulario">
-                        <fieldset>
-                            
-                                
-                                <label for="nombre">Nombre</label>
-                                <input type="text" name="Nombre" id="nombre" placeholder="Ingresa tu nombre" required>
-                                
-                                <label for="apellido">Apellido</label>
-                                <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required>
-                                
-                                <label for="correo">Correo electronico</label>
-                                <input type="email" name="correo" id="correo" placeholder="Ingresa tu email" required>
-                            
-                                <label for="num">Edad</label>
-                                <input type="number" name="num" id="num" placeholder="Ingresa tu Edad" required>
-                            
-                                
-            <!------COMENTARIO------>
-                        
-                                <label for="comentario">Comentario</label>
-                            
-                            <textarea name="comentario" id="comentario" cols="20" rows="4" minlength="10" maxlength="50"></textarea>
-
-                        
-                                <input type="submit" value="Envia formulario">
-                                <input type="reset" value="Limpiar formulario">
-                                
-
-                    </fieldset>
-                </form>
-            </section>
+          
+            <form>
+              <div class="form-row align-items-center">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputname">Nombre y Apellido</label>
+                  <input type="text" class="form-control" id="inputname" placeholder="Nombre y Apellido" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputage">Edad</label>
+                  <input type="number" class="form-control" id="inputage" min="1" max="110"required>
+                </div>
+              </div>            
+                         
+              <button type="submit" class="btn btn-primary">Enviar</button>
+              <button type="reset" class="btn btn-danger">Borrar</button>
+            </form>
+          
     </div>
 </main>
 <div class="redes">

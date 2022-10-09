@@ -1,23 +1,52 @@
 .profesionales{
     grid-area: pro;
-    background-color: rgb(255, 255, 255);
-    border: solid 1px rgb(0, 0, 0);
+    border: solid 0.3rem;
+    background-color: rgb(105, 134, 160);
+    border-radius: 30px;
     border-width: 0.2rem;
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 600;
     width: 22rem;
-    height: 7rem;
+    height: 6rem;
     display: flex;
     margin: 0px auto;
+    transition: font-size 1s,height 1s, width 1s; 
 
+    
     & tr th{
         padding: 1rem;
         text-align: center;
-        width: 8rem;
+        width: 7rem;
         height: 1rem;
     }
+   
+}
+
+.profesionales:hover{
+    grid-area: pro;
+    background-color: rgb(255, 255, 255);
+    border: solid 0.3rem;
+    border-radius: 30px;
+    border-width: 0.3rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 25rem;
+    height: 7rem;
+    display: flex;
+    margin: 0px auto;
+    transition: font-size 1s,height 1s, width 1s; 
+
     
+    & tr th{
+        padding: 1rem;
+        text-align: center;
+        width: 7rem;
+        height: 1rem;
+    }
+   
 }
 

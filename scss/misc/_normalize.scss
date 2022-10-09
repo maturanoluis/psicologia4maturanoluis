@@ -26,6 +26,7 @@ a{
     font-family: $font-principal;
     color: $secondary;
 }
+
 img{
     width: 100%;
 }
@@ -33,24 +34,51 @@ img{
 h1{
     grid-area: titulo;
     text-align: center;
-    padding: $spacing-small;
+    padding: $spacing-xsmall;
     text-decoration: none;
     color: $primary;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+h1:hover{
+    color: $ocean;
 }
 
 h2{
     grid-area: slogan;
     color: $primary;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
     text-align: center;
+    position: relative;
+    animation-name: slogan;
+    animation-duration: 2s;
+    
+}
+@keyframes slogan {
+    0%   { top:-15px;}
+    50%  { top:15px;}
+    100% { top:0px;}
+  }
+
+h2:hover{
+    color: $ocean;
+
 }
 
 h5 {
     grid-area: slogan;
     color: $primary;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
     text-align: center;
     margin-top: 1rem; 
 }
+h5:hover{
+    color: $ocean;
 
+}
 .gridPadre{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

@@ -9,7 +9,6 @@
 
 @import './views/home';
 @import './views/terapias';
-@import './views/nosotros';
 @import './views/contacto';
 @import './views/profesionales';
 @import './views/redes';
@@ -48,7 +47,8 @@
     align-items: center;
     justify-content: center;
     width: 20rem;
-    height: 10rem; }
+    height: 10rem; } 
+
   
   /*--------------FOOTER---------------*/
     .pie ul li a {
@@ -59,18 +59,34 @@
   
   
   @media only screen and (max-width: 480px) {
+
+    .logo img{
+      @include flex (column, center, center);
+      width:3rem;
+      height:3rem;
+      margin: auto;
+      transition: transform 1s;
+            
+  }
+
+  .logo img:hover{
+      transform: scale(1.2);
+      transition: transform 1s;
+  }
     .gridPadre {
       display: grid;
       grid-template-areas: 
-      "titulo titulo"
+    "titulo titulo"
    "slogan slogan"
    "contenido contenido"
    "footer footer";
       grid-template-rows: 150px 300px auto auto 50px;
       grid-template-columns: 50% 50%; }
-    .gridPadrepro {
+    
+      .gridPadrepro {
       display: grid;
-      grid-template-areas: "titulo titulo"
+      grid-template-areas: 
+    "titulo titulo"
    "slogan slogan"
    "pro    pro"
    "footer footer";
@@ -79,44 +95,97 @@
       
     .profesionales{
         @include flex(column, center, center);
-      width: 10rem;
-      height: 15rem;
+      width: 8rem;
+      height: 12rem;
     }
     .profesionales tr th{
         @include flex(column, center, center);
+        font-size: 1rem;
         padding: 2rem;
         text-align: center;
-        width: 8rem;
+        width: 7rem;
         height: 1rem;
       
     }
-    
-    .h2 {
-      font-size: 1.5rem; }
-    .section p a {
-      font-size: 2rem; }
+    .profesionales:hover{
+      width: 9rem;
+      height: 13rem;
+      transition: font-size 1s,height 1s, width 1s; 
   
+      
+      & tr th{
+        font-size: 1.1rem;
+          padding: 1rem;
+          text-align: center;
+          width: 4rem;
+          height: 4rem;
+      }
+     
+  }
+    /*--------------TITULOS---------------*/
+    h1{
+      font-size: $text-small;
+    }
+    h2 {
+      font-size: $text-xsmall; }
+
+    .section p a {
+      font-size: $text-small; }
+
+  /*--------------BOOTSTRAP---------------*/
+
+    .accordion-button{
+        background-color: $negri;
+        font-size: $text-xxsmall;
+    }
+   
+    .accordion-body{
+        background-color: $verdi;
+        font-size: $text-xxsmall;
+     
+    }
+    .navbar-brand{
+      font-size: $text-xsmall;
+    }
+    .navbar{
+        font-size: $text-xxsmall;
+    }
+    .dropdown-menu{
+        font-size: $text-xsmall;
+    }
   
   /*--------------TERAPIAS---------------*/
+
+  .iframevideo{
+    padding: 0;
+
+  }
     .videos {
         @include flex(column, center, center);
        }
     
     .videos iframe {
+      
       align-items: center;
       justify-content: center;
       width: 15rem;
       height: 7rem; }
-    
-    /*--------------FOOTER---------------*/
+ /*--------------CONTACTO---------------*/
+      .form-row{
+        background-color: rgb(255, 255, 255);
+        width: 90%;
+    }
+      /*--------------FOOTER---------------*/
     .pie {
         @include flex(column, center, center);
       }
     .pie ul li a {
-      font-size: 1.1rem;
-      padding: 0.1rem; }
+      font-size: 0.9rem;
+      padding: 0.01rem; }
       
        }
-  
-  
-  
+
+
+
+
+
